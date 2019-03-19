@@ -5,7 +5,7 @@ import Index from '../views/movie/MovieList.vue'
 import Show from '../views/movie/MovieDetail.vue'
 import AddMovie from '../views/movie/MovieAdd.vue'
 import Update from '../views/movie/MovieUpdate.vue'
-import LoginForm from "../views/login/LoginForm.vue";
+import LoginForm from '../views/login/LoginForm.vue'
 
 Vue.use(Router)
 

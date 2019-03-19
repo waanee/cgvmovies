@@ -4,9 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import axios from 'axios'
-import HeaderComponent from "./components/HeaderComponent.vue";
-import FooterComponent from "./components/FooterComponent.vue";
-import LoginForm from "./views/login/LoginForm.vue";
+import HeaderComponent from "./components/HeaderComponent.vue"
+import FooterComponent from "./components/FooterComponent.vue"
+import LoginForm from "./views/login/LoginForm.vue"
 
 import Vuikit from 'vuikit'
 import VuikitIcons from '@vuikit/icons'
@@ -16,13 +16,13 @@ Vue.use(Vuikit)
 Vue.use(VuikitIcons)
 
 Vue.config.productionTip = false
-Vue.prototype.$http = axios;
+Vue.prototype.$http = axios
 
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  components: { App,HeaderComponent,FooterComponent,LoginForm },
+  components: { App, HeaderComponent, FooterComponent, LoginForm },
   template: '<App/>'
 })
