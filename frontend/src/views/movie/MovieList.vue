@@ -1,5 +1,5 @@
 <template>
-    <div class="movies">
+    <div class="container">
         <h1>Movie List</h1>
         <router-link to="/add/movie">add movie</router-link><br>
         <div v-for="movie in movies" class="movie" v-bind:key="movie.id">

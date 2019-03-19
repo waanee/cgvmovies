@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import axios from 'axios'
+import HeaderComponent from "./components/HeaderComponent.vue";
 
 import Vuikit from 'vuikit'
 import VuikitIcons from '@vuikit/icons'
@@ -20,6 +21,6 @@ Vue.prototype.$http = axios;
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: { App,HeaderComponent },
   template: '<App/>'
 })
