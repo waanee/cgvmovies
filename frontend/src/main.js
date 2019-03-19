@@ -5,6 +5,13 @@ import App from './App'
 import router from './router'
 import axios from 'axios'
 
+import Vuikit from 'vuikit'
+import VuikitIcons from '@vuikit/icons'
+import '@vuikit/theme'
+
+Vue.use(Vuikit)
+Vue.use(VuikitIcons)
+
 Vue.config.productionTip = false
 Vue.prototype.$http = axios;
 
