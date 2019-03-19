@@ -15,7 +15,6 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "uikit": "^3.0.3",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
