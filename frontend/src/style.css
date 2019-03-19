@@ -9,8 +9,14 @@
   width:960px;
   margin:0 auto;
 }
+.content-wrap {
+  margin-top:20px;
+}
 .header {
-  background:#e3e3e3;
+  background:#f3f3f3;
+}
+.uk-navbar-container:not(.uk-navbar-transparent){
+  background:transparent;
 }
 @media (max-width:1100px){
   .container {

@@ -1,5 +1,6 @@
 <template>
-    <div class="container header">
+<div class="header">
+    <div class="container">
     <vk-sticky>
         <vk-navbar>
         <vk-navbar-nav>
@@ -7,19 +8,17 @@
             <vk-navbar-nav>
             <vk-navbar-nav-item icon="star" title="Features"></vk-navbar-nav-item>
             </vk-navbar-nav>
-            <vk-navbar-item>
-            <div>Some <a>Link</a></div>
-            </vk-navbar-item>
-            <vk-navbar-item>
-            <form action="javascript:void(0)">
-                <input class="uk-input uk-form-width-small uk-margin-small-right" type="text" placeholder="Input">
-                <vk-button>Button</vk-button>
-            </form>
-            </vk-navbar-item>
+            
+        </vk-navbar-nav>
+
+        <vk-navbar-nav slot="right">
+            <router-link to="/login">Login</router-link>
         </vk-navbar-nav>
         </vk-navbar>        
     </vk-sticky>
     </div>
+</div>
+    
 </template>
 
 <script>
