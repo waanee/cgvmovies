@@ -23,9 +23,11 @@
     },
     created() {
       axios.get('http://localhost:3000/me')
-        .then(({data}) => (this.user = data.user, this.accessLog = data.accessLog))
+        .then(({data}) => (
+            this.user = data.user, this.accessLog = data.accessLog
+        ))
         .catch(() => {
-          this.$store.dispatch('logout').then(()=> this.$router.push('/'))
+            this.$store.dispatch('logout').then(()=> this.$router.push('/'))
         })
     }
   }
