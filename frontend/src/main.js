@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 import axios from 'axios'
 import HeaderComponent from "./components/HeaderComponent.vue"
 import FooterComponent from "./components/FooterComponent.vue"
@@ -23,6 +24,7 @@ Vue.prototype.$http = axios
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App, HeaderComponent, FooterComponent, LoginForm },
   template: '<App/>'
 })

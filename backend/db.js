@@ -1,10 +1,10 @@
 const _db = {
     users: [
-      {id: 1, name: 'Chris', email: 'test@test.com', password: '123123'}
+      {id: 1, name: 'waanee', email: 'waanee87@naver.com', password: 'dhksl1524'}
     ],
     logs: [
     ]
-  }
+  };
   
   const db = {
     findUser ({email, password}) {
