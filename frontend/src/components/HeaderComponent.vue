@@ -15,7 +15,7 @@
         <vk-navbar-nav slot="right">
             <router-link to="/loginpage">Login</router-link> / 
             <router-link to="/me">me</router-link> / 
-            <router-link to="/" v-if="isAuthenticated" @click.prevent="onClickLogout">logout</router-link> 
+            <a to="/" v-if="isAuthenticated" @click.prevent="onClickLogout">logout</a> 
         </vk-navbar-nav>
         </vk-navbar>        
     </div>

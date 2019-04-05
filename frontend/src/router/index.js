@@ -14,7 +14,7 @@ Vue.use(Router)
 
 const requireAuth = () => (to, from, next) => {
   if (store.getters.isAuthenticated) return next()
-  next('/login?returnPath=me')
+  next('/loginpage')
 }
 
 export default new Router({
@@ -23,7 +23,7 @@ export default new Router({
     {
       path: '/',
       name: 'index',
-      component: Index
+      component: Index,
     },
     {
       path: '/movie/:id',
@@ -33,12 +33,14 @@ export default new Router({
     {
       path: '/add/movie/',
       name: 'addmovie',
-      component: AddMovie
+      component: AddMovie,
+      beforeEnter: requireAuth()
     },
     {
       path: '/edit/movie/:id',
       name: 'update',
-      component: Update
+      component: Update,
+      beforeEnter: requireAuth()
     },
     {
       path: '/loginpage',
